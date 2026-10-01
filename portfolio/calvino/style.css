@@ -1,0 +1,229 @@
+body {
+    font-family: 'Palatino', 'URW Palladio L', 'Georgia', serif;
+    background-color: #fdfbf7;
+    margin: 0;
+    padding: 0;
+    color: #2c2c2c;
+    -webkit-font-smoothing: antialiased;
+}
+
+#content {
+    width: 70%;
+    max-width: 900px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 5em 7em;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+    min-height: 100vh;
+}
+
+.main-header {
+    margin-bottom: 12em;
+    text-align: center;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3.5rem;
+    font-weight: 900;
+    letter-spacing: 18px;
+    color: #1a1a1a;
+    margin-bottom: 0.2em;
+    text-transform: uppercase;
+}
+
+.author-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin: 2em 0;
+}
+
+.author-line hr {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid #eee;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: 6px;
+    color: #888;
+    text-transform: uppercase;
+}
+
+.translator-note {
+    font-size: 0.85rem;
+    color: #bbb;
+    letter-spacing: 2px;
+}
+
+#navigation {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 100%;
+    border-top: solid 2px #4e0102; 
+    border-bottom: solid 2px #4e0102;
+    margin-bottom: 4em;
+    padding: 1em 0;
+    text-align: center;
+}
+
+#navigation ul {
+    margin: 0;
+    padding: 0;
+}
+
+#navigation li {
+    display: inline;
+    list-style-type: none;
+    margin: 0 5px;
+}
+
+a:link, a:visited, a:active {
+    color: #17037a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #17037a;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+a:focus {
+    outline: 3px solid #4e0102;
+    outline-offset: 3px;
+    text-decoration: underline;
+}
+
+.current {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.back-link {
+    display: block;
+    font-size: 0.9rem;
+    margin-top: 2em;
+    font-style: italic;
+}
+
+.city-card {
+    position: relative;
+    margin-top: 10em;
+    padding-left: 50px;
+    border-left: 1px solid #f0f0f0;
+    transition: border-color 0.4s ease;
+}
+
+.city-card:hover {
+    border-left: 1px solid #4e0102;
+}
+
+.city-card h2 {
+    font-size: 1.7rem;
+    color: #4e0102;
+    text-align: left;
+    margin-bottom: 2.5rem;
+    border: none;
+    padding: 0;
+}
+
+.city-card h2::before {
+    content: "";
+    position: absolute;
+    left: -57px;
+    top: 0.8rem;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border: 1px solid #4e0102;
+    border-radius: 50%;
+}
+
+p {
+    line-height: 2.1;
+    margin-bottom: 2em;
+    text-align: justify;
+    font-size: 1.05rem;
+    color: #3a3a3a;
+}
+
+#firstStory {
+    color: #2c3e50;
+}
+
+.firstLetter {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 4.5rem;
+    color: #4e0102;
+    float: left;
+    line-height: 0.75;
+    margin-right: 15px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.firstWord {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+em {
+    font-weight: 600;
+    font-style: italic;
+    color: #4e0102;
+}
+
+footer {
+    text-align: center;
+    padding: 10em 0 4em;
+    border-top: 1px solid #f7f7f7;
+    color: #d1d1d1;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    font-size: 0.7rem;
+}
+
+@media screen and (max-width: 700px) {
+    #content {
+        width: 92%;
+        padding: 2em 1.2em;
+        margin: 20px auto;
+    }
+
+    h1 {
+        font-size: 2rem;
+        letter-spacing: 6px;
+    }
+
+    .main-header {
+        margin-bottom: 5em;
+    }
+
+    .author-line {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #navigation li {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .city-card {
+        padding-left: 20px;
+        margin-top: 5em;
+    }
+
+    footer {
+        letter-spacing: 4px;
+        padding: 5em 0 2em;
+    }
+}
+
